@@ -1,0 +1,102 @@
+/* CSS for Portfolio */
+/* styling for body */
+body {
+  font-family: sans-serif;
+}
+/* End body styling, any other styling for body goes above this comment */
+
+/* styling for navbar */
+.navbar-inner {
+  background: #000;
+}
+/* To make navbar brand teal when hovered */
+.navbar-inner > .container-fluid > .navbar > a:hover {
+  color: rgb(0, 128, 128);
+}
+/* styling the navbar brand */
+.navbar-inner > .container-fluid > .navbar > a {
+  font-family: Lobster;
+  font-weight: bolder;
+}
+/* To make remaining contents in navbar teal when hovered */
+.navbar-inner > .container-fluid > .navbar > .collapse > .navbar-nav > .active > .nav-link:hover {
+  color: rgb(0, 128, 128);
+}
+/* To make the text on navbar */
+.navbar-inner > .container-fluid > .navbar > a {
+  color: rgb(0, 255, 255);
+}
+.navbar-inner > .container-fluid > .navbar > .collapse > .navbar-nav > .active > .nav-link {
+  color: rgb(0, 255, 255);
+}
+/* End Navbar stylying. Any other navbar styling goes above this comment. */
+
+/* CSS for Introductory section */
+/* setting the background */
+.wrapper {
+  background: url(../images/Color-Black-Wallpapers-Widescreen.jpg);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* settings for contents */
+.content {
+  text-align: center;
+  padding: 150px;
+}
+/* styling the first heading */
+.content h1 {
+  color: rgb(0, 255, 255);
+  font-family: Lobster;
+  font-weight: bold;
+}
+/* styling for introductory paragraph */
+.content p {
+  color: #FFF;
+  font-weight: bold;
+}
+/* End Introductory section styling, any other styling for introductory div goes above this comment */
+
+/* Styling for About Me div */
+/* styling for the entire container */
+.about-div {
+  background: linear-gradient(#808080, #000, #808080);
+  text-align: center;
+  padding: 30px;
+}
+/* styling for the second heading */
+.about-div h2 {
+  color: rgb(0, 255, 255);
+  font-family: Lobster;
+  font-weight: bold;
+}
+/* styling for about paragraph */
+.about-div p {
+  color: #FFF;
+  font-family: Open Sans;
+  padding: 10px;
+}
+/* End of styling for the about me section. Any other style for this section goes above this comment */
+
+/* Styling for the skills section */
+/* styling for the entire container */
+.skills-div {
+  background: linear-gradient(#808080, #000, #808080);
+  text-align: center;
+  padding: 30px;
+  /* margin-bottom: 10px; */
+}
+/* styling for the header */
+.skills-div h2 {
+  color: rgb(0, 255, 255);
+  font-family: Lobster;
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 10px;
+}
+/* styling for the images */
+.skills-image {
+  border-radius: 70%;
+  padding: 10px;
+}
+/* styling for images decription */
