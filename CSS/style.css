@@ -1,6 +1,7 @@
 /* CSS for Portfolio */
 /* styling for body */
-body {
+.body {
+  background-color: #000;
   font-family: sans-serif;
 }
 /* End body styling, any other styling for body goes above this comment */
@@ -60,9 +61,9 @@ body {
 /* Styling for About Me div */
 /* styling for the entire container */
 .about-div {
-  background: linear-gradient(#808080, #000, #808080);
   text-align: center;
   padding: 30px;
+  background-color: #000;
 }
 /* styling for the second heading */
 .about-div h2 {
@@ -75,16 +76,28 @@ body {
   color: #FFF;
   font-family: Open Sans;
   padding: 10px;
+  text-align: justify;
+}
+/* styling for elements in our div */
+.my-jumb {
+  background: linear-gradient(#808080, #000, #808080);
+  border: 1px solid;
+  border-radius: 5px;
+}
+/* still styling for the about me section */
+#section {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 /* End of styling for the about me section. Any other style for this section goes above this comment */
 
 /* Styling for the skills section */
 /* styling for the entire container */
 .skills-div {
-  background: linear-gradient(#808080, #000, #808080);
   text-align: center;
   padding: 30px;
-  /* margin-bottom: 10px; */
+  background-color: #000;
+  margin-bottom: 10px;
 }
 /* styling for the header */
 .skills-div h2 {
@@ -99,4 +112,19 @@ body {
   border-radius: 70%;
   padding: 10px;
 }
-/* styling for images decription */
+/* End of about me section */
+
+/* Styling for the portfolio section */
+.portfolio-div {
+  background-color: #000;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-top: -10px;
+}
+/* styling for the heading in the portfolio section */
+.my-jumb h2 {
+  text-align: center;
+  color: rgb(0, 255, 255);
+  font-family: Lobster;
+}
