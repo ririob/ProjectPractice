@@ -28,14 +28,17 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#about-me">About <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#about-me">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                    About
+                                </a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="#my-skills">Skills <span class="sr-only">(current)</span></a>
                             </li>
-                            <!-- <li class="nav-item active">
+                            <li class="nav-item active">
                                 <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
-                            </li> -->
+                            </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Contact Me <span class="sr-only">(current)</span></a>
                             </li>
@@ -53,17 +56,18 @@
             <div class="col-md-12 content">
                 <h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="1s">Hi, I'm Richard Obaseki!</h1>
                 <p class="wow bounceInLeft" data-wow-duration="1s" data-wow-delay="1s">Welcome to my website. I am a website developer.</p>
-                <button class="wow bounceInLeft btn btn-info btn-lg" data-wow-duration="1s" data-wow-delay="1s">Go to Portfolio</button>
+                <button class="wow bounceInLeft btn btn-info btn-lg" data-wow-duration="1s" data-wow-delay="1s">Contact Me</button>
             </div>
         </div>
     </div>
 
     <div class="container-fluid about-div">
         <div class="row">
-            <div class="col-md-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+            <div class="col-md-12">
                 <div class="my-jumb" id="section">
                     <h2 id="about-me">About Me</h2>
-                    <p>Hi I'm Richard Obaseki, a curious minded person who likes to learn new things. I am a programmer and I hope to be a full stack developer soon. I have a high school degree. I am from Benin city, Edo state, Nigeria and I currently live in Lagos. I speak Bini and Yoruba. I love traveling, Learning, and practicing my skills. Contact me for freelance projects.</p>
+                    <p>Hi I'm Richard Obaseki, a curious minded person who likes to learn new things. I am a programmer and I hope to be a full stack developer soon. I have a high school degree. I am from Benin city, Edo state, Nigeria and I currently live in Lagos. I speak Bini and Yoruba. I love traveling, Learning, and practicing my skills.</p>
+                    <p>I build responsive website for brands and company websites. I am leaning cascading style sheets and I will be improving onto JavaScript to make pages interactive and to manipulate websites and creates apps for brands and companies.</p>
                 </div>
             </div>
         </div>
@@ -71,13 +75,24 @@
 
     <div class="container-fluid skills-div" id="my-skills">
         <div class="row">
-            <div class="col-md-12 wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                <div class="my-jumb">
+            <div class="col-md-12 sm-12">
+                <div class="my-jumb skills-jumb">
                     <h2 id="my-skills">Skills</h2>
-                    <div class="skills-container wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
-                        <img class="skills-image" src="images/html-image.jpg" style="width:26%;" alt="">
-                        <img class="skills-image" src="images/css-image.jpg" style="width:26%;" alt="css image">
-                        <img class="skills-image" src="images/javascript-image.png" style="width:30%;" alt="javascript image">
+                    <!-- <div class="skills-container">
+                        <img class="skills-image" src="images/html-image.jpg" alt="html image" style="width:25%;">
+                        <img class="skills-image" src="images/css-image.jpg" alt="css image" style="width: 24%;">
+                        <img class="skills-image" src="images/javascript-image.png" alt="javascript image" style="width:27%;">
+                    </div> -->
+                    <div class="container skills-name">
+                        <div class="skills1">
+                            1
+                        </div>
+                        <div class="skills2">
+                            2
+                        </div>
+                        <div class="skills3">
+                            3
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,16 +115,20 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="contact-jumb">
-                    <h2>Contact me</h2>
+                    <h2>Contact Me</h2>
                     <form class="contact-form">
                         <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Enter name" required>
+                        </div>
+                        <div class="form-group">
                             <label for="exampleInputEmail1" class="contact-email">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <label for="form-message">Message</label>
+                            <textarea id="form-message" name="message" class="form-control" placeholder="Enter message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-info">Submit</button>
                     </form>

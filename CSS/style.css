@@ -110,10 +110,52 @@
 }
 /* styling for the images */
 .skills-image {
-  border-radius: 70%;
+  border-radius: 10%;
   padding: 10px;
 }
-/* End of about me section */
+/* styling for skills names */
+.skills1 {
+  background: red;
+}
+.skills2 {
+  background: blue;
+}
+.skills3 {
+  background: aqua;
+}
+.skills-name {
+  font-size: 40px;
+  min-height: 300px;
+  width: 100%;
+  background: #000;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+   "first-skill"
+   "second-skill"
+   "third-skill";
+  margin-bottom: 30px;
+  padding: 20px;
+}
+@media (max-width: 414px){
+  .skills-name {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+     "first-skill"
+     "second-skill"
+     "third-skill";
+  }
+  .skills1,
+  .skills2,
+  .skills3 {
+    background: #FFF;
+    padding: 40px;
+  }
+}
+/* End of skills section */
 
 /* Styling for the portfolio section */
 .portfolio-div {
